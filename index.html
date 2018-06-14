@@ -431,7 +431,10 @@
         
           
           Netflix是什么，与Spring Cloud有什么关系Netflix 是美国在线影片租赁商.曾利用超过 100 亿次的用户观看纪录分析观众喜好，制作出热播剧集《纸牌屋》。Netflix 的工程文化，被很多国内一线互联网公司研究借鉴，但实际上，这家技术实力超群的公司，却是没有 CTO 的。
-Net
+Netflix由于做视频的原因，访问量非常的大，从而促使其技术快速的发展在背后支撑着，也正是如此，Netflix开始把整体的系统往微服务上迁移。
+Netflix 微服务技术栈的核心组件基本上都是开源的。Pivotal 在 2~3 年前把 Netflix 开源的这摊东西封装一下改头换面，再拼凑一些其它东西（配置中心，调用链监控等）就变成了 Spring Cloud。现在大家耳熟能详的 Zuul 网关，Eureka 服务发现注册中心，Hystrix 熔断限流，Archaius 配置等组件，Netflix 在 2012 年左右就都开源出来了。
+Spring历史起点2002 年 10 月，Rod Johnson 撰写了一本名为 Expert One-on-One J2EE 设计和开发的书。本书由 Wrox出版，介绍了当时 Java 企业应用程序开发的情况，并指出了 Java EE 和 EJB 组件框架中的存在的一些主要缺陷。在这本书中，他提出了一个基于普通 Java 类和依赖注入的更简单的解决方案。
+
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -585,8 +588,17 @@ Net
       
         
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new "My New Post"
+More info: Writing
+Run server1$ hexo server
+More info: Server
+Generate static files1$ hexo generate
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+More info: Deployment
+
+          
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/05/18/hello-world/#more" rel="contents">
