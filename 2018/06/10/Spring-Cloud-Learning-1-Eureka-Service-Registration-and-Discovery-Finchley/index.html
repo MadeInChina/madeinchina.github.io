@@ -116,7 +116,7 @@
 <meta property="og:description" content="Spring历史起点2002 年 10 月，Rod Johnson 撰写了一本名为 Expert One-on-One J2EE 设计和开发的书。本书由 Wrox出版，介绍了当时 Java 企业应用程序开发的情况，并指出了 Java EE 和 EJB 组件框架中的存在的一些主要缺陷。在这本书中，他提出了一个基于普通 Java 类和依赖注入的更简单的解决方案。 在书中，他展示了如何在不使用 EJB">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://madeinchina.github.io/2018/06/10/Spring-Cloud-Learning-1-Eureka-Service-Registration-and-Discovery-Finchley/Xnip2018-07-06_13-59-19.jpg">
-<meta property="og:updated_time" content="2018-07-06T06:32:35.041Z">
+<meta property="og:updated_time" content="2018-07-06T07:53:19.635Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring Cloud Learning 1:Eureka [Service Registration and Discovery].Finchley">
 <meta name="twitter:description" content="Spring历史起点2002 年 10 月，Rod Johnson 撰写了一本名为 Expert One-on-One J2EE 设计和开发的书。本书由 Wrox出版，介绍了当时 Java 企业应用程序开发的情况，并指出了 Java EE 和 EJB 组件框架中的存在的一些主要缺陷。在这本书中，他提出了一个基于普通 Java 类和依赖注入的更简单的解决方案。 在书中，他展示了如何在不使用 EJB">
@@ -384,7 +384,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-06 14:32:35" itemprop="dateModified" datetime="2018-07-06T14:32:35+08:00">2018-07-06</time>
+                <time title="修改时间：2018-07-06 15:53:19" itemprop="dateModified" datetime="2018-07-06T15:53:19+08:00">2018-07-06</time>
               
             
           </span>
@@ -460,9 +460,6 @@
 <p>2015 年 11 月，Spring io 2.0.0 发布。这提供了一套更新的依赖项，包括 Spring Boot 1.3。2016 年 7月，Spring io 团队决定使用按字母顺序排版的方案。Spring IO 为此使用城市名称。在字母版本方案中，新名称表示依赖库的次要和主要升级。</p>
 <p>2016 年 9 月，雅典发布了首个按字母顺序排列的城市命名的 Spring io 平台版本。它包含 Spring Boot 1.4 和其他第三方库升级。此后，雅典发布了多个服务版本（SR1，SR2，SR3和SR4）。</p>
 <p>2017 年 3 月，最新的 Spring io平台（Brussels-SR1）发布。它使用最新的 Spring Boot 版本 1.5.2。下一个 Spring io 平台是开罗计划推出的 spring boot 2.0 和 spring framework 5.0。</p>
-<h1 id="Netflix是什么，与Spring-Cloud有什么关系"><a href="#Netflix是什么，与Spring-Cloud有什么关系" class="headerlink" title="Netflix是什么，与Spring Cloud有什么关系"></a>Netflix是什么，与Spring Cloud有什么关系</h1><h2 id="Netflix-是美国在线影片租赁商"><a href="#Netflix-是美国在线影片租赁商" class="headerlink" title="Netflix 是美国在线影片租赁商."></a>Netflix 是美国在线影片租赁商.</h2><p>曾利用超过 100 亿次的用户观看纪录分析观众喜好，制作出热播剧集《纸牌屋》。Netflix 的工程文化，被很多国内一线互联网公司研究借鉴，但实际上，这家技术实力超群的公司，却是没有 CTO 的。</p>
-<p>Netflix由于做视频的原因，访问量非常的大，从而促使其技术快速的发展在背后支撑着，也正是如此，Netflix开始把整体的系统往微服务上迁移。</p>
-<p>Netflix 微服务技术栈的核心组件基本上都是开源的。Pivotal 在 2~3 年前把 Netflix 开源的这摊东西封装一下改头换面，再拼凑一些其它东西（配置中心，调用链监控等）就变成了 Spring Cloud。现在大家耳熟能详的 Zuul 网关，Eureka 服务发现注册中心，Hystrix 熔断限流，Archaius 配置等组件，Netflix 在 2012 年左右就都开源出来了。</p>
 <h1 id="CAP定理"><a href="#CAP定理" class="headerlink" title="CAP定理"></a>CAP定理</h1><p>CAP原则又称CAP定理，指的是在一个分布式系统中，Consistency（一致性）、 Availability（可用性）、Partition tolerance（分区容错性），三者不可得兼</p>
 <h2 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h2><p>分布式系统的CAP理论：理论首先把分布式系统中的三个特性进行了如下归纳：</p>
 <ul>
@@ -480,6 +477,9 @@
 <p>Eureka is a REST (Representational State Transfer) based service that is primarily used in the AWS cloud for locating services for the purpose of load balancing and failover of middle-tier servers. We call this service, the Eureka Server. Eureka also comes with a Java-based client component,the Eureka Client, which makes interactions with the service much easier. The client also has a built-in load balancer that does basic round-robin load balancing. At Netflix, a much more sophisticated load balancer wraps Eureka to provide weighted load balancing based on several factors like traffic, resource usage, error conditions etc to provide superior resiliency.</p>
 <h1 id="Consul-vs-Zookeeper-vs-Eureka"><a href="#Consul-vs-Zookeeper-vs-Eureka" class="headerlink" title="Consul vs Zookeeper vs Eureka"></a>Consul vs Zookeeper vs Eureka</h1><p><a href="https://stackshare.io/stackups/consul-vs-eureka-vs-zookeeper#stacks" target="_blank" rel="noopener">https://stackshare.io/stackups/consul-vs-eureka-vs-zookeeper#stacks</a></p>
 <p><img src="Xnip2018-07-06_13-59-19.jpg" alt=""></p>
+<h1 id="Netflix是什么，与Spring-Cloud有什么关系"><a href="#Netflix是什么，与Spring-Cloud有什么关系" class="headerlink" title="Netflix是什么，与Spring Cloud有什么关系"></a>Netflix是什么，与Spring Cloud有什么关系</h1><h2 id="Netflix-是美国在线影片租赁商"><a href="#Netflix-是美国在线影片租赁商" class="headerlink" title="Netflix 是美国在线影片租赁商."></a>Netflix 是美国在线影片租赁商.</h2><p>曾利用超过 100 亿次的用户观看纪录分析观众喜好，制作出热播剧集《纸牌屋》。Netflix 的工程文化，被很多国内一线互联网公司研究借鉴，但实际上，这家技术实力超群的公司，却是没有 CTO 的。</p>
+<p>Netflix由于做视频的原因，访问量非常的大，从而促使其技术快速的发展在背后支撑着，也正是如此，Netflix开始把整体的系统往微服务上迁移。</p>
+<p>Netflix 微服务技术栈的核心组件基本上都是开源的。Pivotal 在 2~3 年前把 Netflix 开源的这摊东西封装一下改头换面，再拼凑一些其它东西（配置中心，调用链监控等）就变成了 Spring Cloud。现在大家耳熟能详的 Zuul 网关，Eureka 服务发现注册中心，Hystrix 熔断限流，Archaius 配置等组件，Netflix 在 2012 年左右就都开源出来了。</p>
 <h1 id="Spring-Cloud-Netflix"><a href="#Spring-Cloud-Netflix" class="headerlink" title="Spring Cloud Netflix"></a>Spring Cloud Netflix</h1><p><a href="https://cloud.spring.io/spring-cloud-netflix/" target="_blank" rel="noopener">https://cloud.spring.io/spring-cloud-netflix/</a></p>
 <p>Spring Cloud Netflix provides Netflix OSS integrations for Spring Boot apps through autoconfiguration and binding to the Spring Environment and other Spring programming model idioms. With a few simple annotations you can quickly enable and configure the common patterns inside your application and build large distributed systems with battle-tested Netflix components. The patterns provided include Service Discovery (Eureka), Circuit Breaker (Hystrix), Intelligent Routing (Zuul) and Client Side Load Balancing (Ribbon)..</p>
 <p>Features<br>Spring Cloud Netflix features:</p>
@@ -541,6 +541,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/21/Tensorflow-Install/" rel="prev" title="Tensorflow Install-Docker">
+                Tensorflow Install-Docker <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -624,7 +628,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -664,7 +668,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring历史"><span class="nav-number">1.</span> <span class="nav-text">Spring历史</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#起点"><span class="nav-number">1.1.</span> <span class="nav-text">起点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-诞生"><span class="nav-number">1.2.</span> <span class="nav-text">Spring 诞生</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-框架的快速增长"><span class="nav-number">1.3.</span> <span class="nav-text">Spring 框架的快速增长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-Boot-的历史"><span class="nav-number">1.4.</span> <span class="nav-text">Spring Boot 的历史</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-IO-和-Spring-Boot"><span class="nav-number">1.5.</span> <span class="nav-text">Spring IO 和 Spring Boot</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Netflix是什么，与Spring-Cloud有什么关系"><span class="nav-number">2.</span> <span class="nav-text">Netflix是什么，与Spring Cloud有什么关系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Netflix-是美国在线影片租赁商"><span class="nav-number">2.1.</span> <span class="nav-text">Netflix 是美国在线影片租赁商.</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CAP定理"><span class="nav-number">3.</span> <span class="nav-text">CAP定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理论"><span class="nav-number">3.1.</span> <span class="nav-text">理论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Eureka是什么"><span class="nav-number">4.</span> <span class="nav-text">Eureka是什么?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Consul-vs-Zookeeper-vs-Eureka"><span class="nav-number">5.</span> <span class="nav-text">Consul vs Zookeeper vs Eureka</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Netflix"><span class="nav-number">6.</span> <span class="nav-text">Spring Cloud Netflix</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring历史"><span class="nav-number">1.</span> <span class="nav-text">Spring历史</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#起点"><span class="nav-number">1.1.</span> <span class="nav-text">起点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-诞生"><span class="nav-number">1.2.</span> <span class="nav-text">Spring 诞生</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-框架的快速增长"><span class="nav-number">1.3.</span> <span class="nav-text">Spring 框架的快速增长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-Boot-的历史"><span class="nav-number">1.4.</span> <span class="nav-text">Spring Boot 的历史</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-IO-和-Spring-Boot"><span class="nav-number">1.5.</span> <span class="nav-text">Spring IO 和 Spring Boot</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CAP定理"><span class="nav-number">2.</span> <span class="nav-text">CAP定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理论"><span class="nav-number">2.1.</span> <span class="nav-text">理论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Eureka是什么"><span class="nav-number">3.</span> <span class="nav-text">Eureka是什么?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Consul-vs-Zookeeper-vs-Eureka"><span class="nav-number">4.</span> <span class="nav-text">Consul vs Zookeeper vs Eureka</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Netflix是什么，与Spring-Cloud有什么关系"><span class="nav-number">5.</span> <span class="nav-text">Netflix是什么，与Spring Cloud有什么关系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Netflix-是美国在线影片租赁商"><span class="nav-number">5.1.</span> <span class="nav-text">Netflix 是美国在线影片租赁商.</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Netflix"><span class="nav-number">6.</span> <span class="nav-text">Spring Cloud Netflix</span></a></li></ol></div>
             
 
           </div>

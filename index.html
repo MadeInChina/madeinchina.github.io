@@ -320,6 +320,171 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://madeinchina.github.io/2018/07/21/Tensorflow-Install/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="slamhan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Code Kata">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/21/Tensorflow-Install/" itemprop="url">
+                  Tensorflow Install-Docker
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-07-21 21:19:54 / 修改时间：21:46:06" itemprop="dateCreated datePublished" datetime="2018-07-21T21:19:54+08:00">2018-07-21</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/21/Tensorflow-Install/#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/07/21/Tensorflow-Install/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Install tensorflow via docker on Ubuntu 1.64
+安装nvidia-docker 
+官网地址 https://github.com/NVIDIA/nvidia-docker,按照文档一步一步安装就好
+Quickstart
+Make sure you have installed the NVIDIA driver and a supported version of Docker for your distribution (see prerequisites).
+If you have a custom /etc/docker/daemon.json, the nvidia-docker2 package might override it.
+Ubuntu 14.04/16.04/18.04, Debian Jessie/Stretch
+If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containersdocker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker r
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/21/Tensorflow-Install/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://madeinchina.github.io/2018/06/10/Spring-Cloud-Learning-1-Eureka-Service-Registration-and-Discovery-Finchley/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -383,7 +548,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-06 14:32:35" itemprop="dateModified" datetime="2018-07-06T14:32:35+08:00">2018-07-06</time>
+                <time title="修改时间：2018-07-06 15:53:19" itemprop="dateModified" datetime="2018-07-06T15:53:19+08:00">2018-07-06</time>
               
             
           </span>
@@ -684,7 +849,7 @@ More info: Deployment
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>

@@ -108,24 +108,24 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Install tensorflow via docker on Ubuntu 1.64 安装nvidia-docker  官网地址 https://github.com/NVIDIA/nvidia-docker,按照文档一步一步安装就好 Quickstart Make sure you have installed the NVIDIA driver and a supported versio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://madeinchina.github.io/2018/05/18/hello-world/index.html">
+<meta property="og:title" content="Tensorflow Install-Docker">
+<meta property="og:url" content="http://madeinchina.github.io/2018/07/21/Tensorflow-Install/index.html">
 <meta property="og:site_name" content="Code Kata">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Install tensorflow via docker on Ubuntu 1.64 安装nvidia-docker  官网地址 https://github.com/NVIDIA/nvidia-docker,按照文档一步一步安装就好 Quickstart Make sure you have installed the NVIDIA driver and a supported versio">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-18T12:13:23.676Z">
+<meta property="og:updated_time" content="2018-07-21T13:46:06.038Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Tensorflow Install-Docker">
+<meta name="twitter:description" content="Install tensorflow via docker on Ubuntu 1.64 安装nvidia-docker  官网地址 https://github.com/NVIDIA/nvidia-docker,按照文档一步一步安装就好 Quickstart Make sure you have installed the NVIDIA driver and a supported versio">
 
 
 
 
 
 
-  <link rel="canonical" href="http://madeinchina.github.io/2018/05/18/hello-world/"/>
+  <link rel="canonical" href="http://madeinchina.github.io/2018/07/21/Tensorflow-Install/"/>
 
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>Hello World | Code Kata</title>
+  <title>Tensorflow Install-Docker | Code Kata</title>
   
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://madeinchina.github.io/2018/05/18/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://madeinchina.github.io/2018/07/21/Tensorflow-Install/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="slamhan">
@@ -340,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">Tensorflow Install-Docker
               
             
           </h1>
@@ -365,9 +365,13 @@
                 
               
 
-              <time title="创建时间：2018-05-18 20:13:23" itemprop="dateCreated datePublished" datetime="2018-05-18T20:13:23+08:00">2018-05-18</time>
+              <time title="创建时间：2018-07-21 21:19:54 / 修改时间：21:46:06" itemprop="dateCreated datePublished" datetime="2018-07-21T21:19:54+08:00">2018-07-21</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -380,10 +384,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/18/hello-world/#comments" itemprop="discussionUrl">
+                <a href="/2018/07/21/Tensorflow-Install/#comments" itemprop="discussionUrl">
                 
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/05/18/hello-world/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/07/21/Tensorflow-Install/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -411,15 +415,32 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="Install-tensorflow-via-docker-on-Ubuntu-1-64"><a href="#Install-tensorflow-via-docker-on-Ubuntu-1-64" class="headerlink" title="Install tensorflow via docker on Ubuntu 1.64"></a>Install tensorflow via docker on Ubuntu 1.64</h1><ul>
+<li><p>安装nvidia-docker </p>
+<p>官网地址 <a href="https://github.com/NVIDIA/nvidia-docker,按照文档一步一步安装就好" target="_blank" rel="noopener">https://github.com/NVIDIA/nvidia-docker,按照文档一步一步安装就好</a></p>
+<p>Quickstart</p>
+<p>Make sure you have installed the NVIDIA driver and a supported version of Docker for your distribution (see prerequisites).</p>
+<p>If you have a custom /etc/docker/daemon.json, the nvidia-docker2 package might override it.</p>
+<p>Ubuntu 14.04/16.04/18.04, Debian Jessie/Stretch</p>
+<h1 id="If-you-have-nvidia-docker-1-0-installed-we-need-to-remove-it-and-all-existing-GPU-containers"><a href="#If-you-have-nvidia-docker-1-0-installed-we-need-to-remove-it-and-all-existing-GPU-containers" class="headerlink" title="If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers"></a>If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers</h1><p>docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f<br>sudo apt-get purge -y nvidia-docker</p>
+<h1 id="Add-the-package-repositories"><a href="#Add-the-package-repositories" class="headerlink" title="Add the package repositories"></a>Add the package repositories</h1><p>curl -s -L <a href="https://nvidia.github.io/nvidia-docker/gpgkey" target="_blank" rel="noopener">https://nvidia.github.io/nvidia-docker/gpgkey</a> | \<br>sudo apt-key add -<br>distribution=$(. /etc/os-release;echo $ID$VERSION_ID)<br>curl -s -L <a href="https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list" target="_blank" rel="noopener">https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list</a> | \<br>sudo tee /etc/apt/sources.list.d/nvidia-docker.list<br>sudo apt-get update</p>
+<h1 id="Install-nvidia-docker2-and-reload-the-Docker-daemon-configuration"><a href="#Install-nvidia-docker2-and-reload-the-Docker-daemon-configuration" class="headerlink" title="Install nvidia-docker2 and reload the Docker daemon configuration"></a>Install nvidia-docker2 and reload the Docker daemon configuration</h1><p>sudo apt-get install -y nvidia-docker2<br>sudo pkill -SIGHUP dockerd</p>
+<h1 id="Test-nvidia-smi-with-the-latest-official-CUDA-image"><a href="#Test-nvidia-smi-with-the-latest-official-CUDA-image" class="headerlink" title="Test nvidia-smi with the latest official CUDA image"></a>Test nvidia-smi with the latest official CUDA image</h1><p>docker run –runtime=nvidia –rm nvidia/cuda nvidia-smi</p>
+<p>如果安装成功，验证结果如下</p>
+<p>~$ docker run –runtime=nvidia –rm nvidia/cuda nvidia-smi<br>Unable to find image ‘nvidia/cuda:latest’ locally<br>latest: Pulling from nvidia/cuda<br>3620e2d282dc: Pull complete<br>ef22f5e4b3b2: Pull complete<br>99f229f854da: Pull complete<br>4fe433abe16a: Pull complete<br>c9b72a16d85e: Pull complete<br>d8035bc3f55b: Pull complete<br>6127b1e0d8ff: Pull complete<br>dfa396b03211: Pull complete<br>2a275c55a1e6: Pull complete<br>cf49a7b9184b: Pull complete<br>Digest: sha256:65a5f256dcb443fd20d4c179da1ae526bcd3fba462332a99db80c6f7796a290c<br>Status: Downloaded newer image for nvidia/cuda:latest<br>Sat Jul 21 10:36:19 2018<br>+—————————————————————————–+<br>| NVIDIA-SMI 384.130                Driver Version: 384.130                   |<br>|——————————-+———————-+———————-+<br>| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |<br>| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |<br>|===============================+======================+======================|<br>|   0  GeForce GTX 108…  Off  | 00000000:01:00.0  On |                  N/A |<br>| 29%   53C    P0    61W / 250W |    417MiB / 11169MiB |      1%      Default |<br>+——————————-+———————-+———————-+</p>
+<p>+—————————————————————————–+<br>| Processes:                                                       GPU Memory |<br>|  GPU       PID   Type   Process name                             Usage      |<br>|=============================================================================|<br>+—————————————————————————–+</p>
+</li>
+<li><p>运行tensorflow</p>
+<p>跟着官网<a href="https://tensorflow.google.cn/install/install_linux" target="_blank" rel="noopener">https://tensorflow.google.cn/install/install_linux</a><br>The following command also launches the latest TensorFlow GPU binary image in a Docker container. In this Docker container, you can run TensorFlow programs in a Jupyter notebook:</p>
+<p>$ nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:latest-gpu</p>
+<p>如果运行成功，验证结果如下</p>
+<p>[I 10:44:25.520 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret<br>[W 10:44:25.534 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.<br>[I 10:44:25.539 NotebookApp] Serving notebooks from local directory: /notebooks<br>[I 10:44:25.539 NotebookApp] 0 active kernels<br>[I 10:44:25.539 NotebookApp] The Jupyter Notebook is running at:<br>[I 10:44:25.539 NotebookApp] <a href="http://905aa8bc79f7:8888/?token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e" target="_blank" rel="noopener">http://905aa8bc79f7:8888/?token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e</a><br>[I 10:44:25.539 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).<br>[C 10:44:25.540 NotebookApp] </p>
+<p>   Copy/paste this URL into your browser when you connect for the first time,<br>   to login with a token: <a href="http://905aa8bc79f7:8888/?token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e&amp;token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e" target="_blank" rel="noopener">http://905aa8bc79f7:8888/?token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e&amp;token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e</a></p>
+<p>访问地址(因为用的是docker安装所以不能直接使用上面的地址，需要修改成本地ip):<a href="http://localhost:8889/?token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e&amp;token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e" target="_blank" rel="noopener">http://localhost:8889/?token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e&amp;token=741037c3f7575e0cd31249c7154249db45fa8abb90bd7c5e</a></p>
+</li>
+<li><p>安装Anaconda3<br>官网:<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a></p>
+</li>
+</ul>
 
       
     </div>
@@ -447,15 +468,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/06/10/Spring-Cloud-Learning-1-Eureka-Service-Registration-and-Discovery-Finchley/" rel="next" title="Spring Cloud Learning 1:Eureka [Service Registration and Discovery].Finchley">
+                <i class="fa fa-chevron-left"></i> Spring Cloud Learning 1:Eureka [Service Registration and Discovery].Finchley
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/10/Spring-Cloud-Learning-1-Eureka-Service-Registration-and-Discovery-Finchley/" rel="prev" title="Spring Cloud Learning 1:Eureka [Service Registration and Discovery].Finchley">
-                Spring Cloud Learning 1:Eureka [Service Registration and Discovery].Finchley <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -579,7 +600,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Install-tensorflow-via-docker-on-Ubuntu-1-64"><span class="nav-number">1.</span> <span class="nav-text">Install tensorflow via docker on Ubuntu 1.64</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#If-you-have-nvidia-docker-1-0-installed-we-need-to-remove-it-and-all-existing-GPU-containers"><span class="nav-number">2.</span> <span class="nav-text">If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Add-the-package-repositories"><span class="nav-number">3.</span> <span class="nav-text">Add the package repositories</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install-nvidia-docker2-and-reload-the-Docker-daemon-configuration"><span class="nav-number">4.</span> <span class="nav-text">Install nvidia-docker2 and reload the Docker daemon configuration</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Test-nvidia-smi-with-the-latest-official-CUDA-image"><span class="nav-number">5.</span> <span class="nav-text">Test nvidia-smi with the latest official CUDA image</span></a></li></ol></div>
             
 
           </div>
@@ -733,9 +754,9 @@
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://madeinchina.github.io/2018/05/18/hello-world/';
-        this.page.identifier = '2018/05/18/hello-world/';
-        this.page.title = 'Hello World';
+        this.page.url = 'http://madeinchina.github.io/2018/07/21/Tensorflow-Install/';
+        this.page.identifier = '2018/07/21/Tensorflow-Install/';
+        this.page.title = 'Tensorflow Install-Docker';
         };
       function loadComments () {
         var d = document, s = d.createElement('script');
